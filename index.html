@@ -250,7 +250,7 @@ let lastSig=dataSig();
 function save(){const g=dataSig();if(g!==lastSig){lastSig=g;S.t=Date.now();queuePush()}try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 
 // Supabase: el estado completo en una fila por usuario, gana el más nuevo (S.t)
-const SB_URL='',SB_KEY='';
+const SB_URL='https://lqutcgsgdsmmgdcusrja.supabase.co',SB_KEY='sb_publishable_V77sjzc9eOcwbxEaic91cw_j0Ur9HDt';
 const AK='bm105:sb';
 let auth=null,syncMsg='',pushT=0;
 try{auth=JSON.parse(localStorage.getItem(AK))}catch(e){}
